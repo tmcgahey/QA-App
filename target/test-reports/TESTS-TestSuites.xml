@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="0" hostname="Travis-McGaheys-MacBook-Pro.local" id="0" name="AttributeIntegrationTests" package="jiraacc" tests="2" time="0.244" timestamp="2013-06-22T02:03:06">
+      <properties />
+
+      <testcase classname="jiraacc.AttributeIntegrationTests" name="CanSaveAnAttribute" time="0.22" />
+
+      <testcase classname="jiraacc.AttributeIntegrationTests" name="AttributeNameCanNotBeNull" time="0.011" />
+
+      <system-out><![CDATA[--Output from CanSaveAnAttribute--
+--Output from AttributeNameCanNotBeNull--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from CanSaveAnAttribute--
+--Output from AttributeNameCanNotBeNull--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Travis-McGaheys-MacBook-Pro.local" id="1" name="ComponentIntegrationTests" package="jiraacc" tests="2" time="0.026" timestamp="2013-06-22T02:03:06">
+      <properties />
+
+      <testcase classname="jiraacc.ComponentIntegrationTests" name="CanSaveAComponent" time="0.014" />
+
+      <testcase classname="jiraacc.ComponentIntegrationTests" name="ComponentNameCanNotBeNull" time="0.0070" />
+
+      <system-out><![CDATA[--Output from CanSaveAComponent--
+--Output from ComponentNameCanNotBeNull--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from CanSaveAComponent--
+--Output from ComponentNameCanNotBeNull--
+]]></system-err>
+
+  </testsuite>
+</testsuites>

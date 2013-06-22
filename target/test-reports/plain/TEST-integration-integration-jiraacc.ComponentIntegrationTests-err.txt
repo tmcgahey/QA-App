@@ -1,0 +1,2 @@
+--Output from CanSaveAComponent--
+--Output from ComponentNameCanNotBeNull--

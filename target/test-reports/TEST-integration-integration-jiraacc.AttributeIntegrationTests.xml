@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="Travis-McGaheys-MacBook-Pro.local" name="jiraacc.AttributeIntegrationTests" tests="2" time="0.244" timestamp="2013-06-22T02:03:06">
+  <properties />
+  <testcase classname="jiraacc.AttributeIntegrationTests" name="CanSaveAnAttribute" time="0.22" />
+  <testcase classname="jiraacc.AttributeIntegrationTests" name="AttributeNameCanNotBeNull" time="0.011" />
+  <system-out><![CDATA[--Output from CanSaveAnAttribute--
+--Output from AttributeNameCanNotBeNull--
+]]></system-out>
+  <system-err><![CDATA[--Output from CanSaveAnAttribute--
+--Output from AttributeNameCanNotBeNull--
+]]></system-err>
+</testsuite>

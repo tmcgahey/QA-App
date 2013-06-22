@@ -1,0 +1,13 @@
+Testsuite: jiraacc.AttributeIntegrationTests
+Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.244 sec
+------------- Standard Output ---------------
+--Output from CanSaveAnAttribute--
+--Output from AttributeNameCanNotBeNull--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from CanSaveAnAttribute--
+--Output from AttributeNameCanNotBeNull--
+------------- ---------------- ---------------
+
+Testcase: CanSaveAnAttribute took 0.221 sec
+Testcase: AttributeNameCanNotBeNull took 0.011 sec

@@ -1,0 +1,13 @@
+Testsuite: jiraacc.ComponentIntegrationTests
+Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.026 sec
+------------- Standard Output ---------------
+--Output from CanSaveAComponent--
+--Output from ComponentNameCanNotBeNull--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from CanSaveAComponent--
+--Output from ComponentNameCanNotBeNull--
+------------- ---------------- ---------------
+
+Testcase: CanSaveAComponent took 0.014 sec
+Testcase: ComponentNameCanNotBeNull took 0.007 sec
