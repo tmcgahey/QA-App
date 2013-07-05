@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="1" hostname="Travis-McGaheys-MacBook-Pro.local" name="jiraacc.AttributeTests" tests="1" time="0.933" timestamp="2013-07-03T03:15:28">
+  <properties />
+  <testcase classname="jiraacc.AttributeTests" name="testSomething" time="0.813">
+    <failure message="junit.framework.AssertionFailedError: Implement me" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: junit.framework.AssertionFailedError: Implement me
+	at jiraacc.AttributeTests.testSomething(AttributeTests.groovy:15)
+</failure>
+  </testcase>
+  <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+  <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+</testsuite>

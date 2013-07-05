@@ -1,0 +1,252 @@
+<!DOCTYPE html><html xmlns:lxslt="http://xml.apache.org/xslt" xmlns:stringutils="xalan://org.apache.tools.ant.util.StringUtils">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>
+                    Test - ComponentIntegrationTests</title>
+<link rel="shortcut icon" href="http://grails.org/images/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" title="Style" href="../stylesheet.css">
+</head>
+<body>
+<div class="container container_8" id="report">
+<div class="grid_6">
+<a title="Home" href="../index.html">
+<div class="grailslogo"></div>
+</a>
+<h1>ComponentIntegrationTests</h1>
+<h2>Package: jiraacc</h2>
+</div>
+<div class="grid_2">
+<nav id="navigationlinks">
+<p>
+<a href="../failed.html">
+                    Tests with failure and errors
+                </a>
+</p>
+<p>
+<a href="../index.html">
+                    Package summary
+                </a>
+</p>
+<p>
+<a href="../all.html">
+                    Show all tests
+                </a>
+</p>
+</nav>
+</div>
+<div class="clear"></div>
+<div class="testsuite success">
+<div class="header">
+<h2>ComponentIntegrationTests</h2>
+<h3>
+                        Executed
+                        3
+                        tests
+                    
+                        without a single error or failure!
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="CanSaveAComponent">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">CanSaveAComponent</b>
+</p>
+<p class="summary">Executed in 0.013 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="ComponentNameCanNotBeNull">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">ComponentNameCanNotBeNull</b>
+</p>
+<p class="summary">Executed in 0.0040 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="ComponentNameMustBeUnique">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">ComponentNameMustBeUnique</b>
+</p>
+<p class="summary">Executed in 0.01 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from CanSaveAComponent--
+--Output from ComponentNameCanNotBeNull--
+
+Errors:
+grails.validation.ValidationErrors: 1 errors
+Field error in object 'jiraacc.Component' on field 'name': rejected value [null]; codes [jiraacc.Component.name.nullable.error.jiraacc.Component.name,jiraacc.Component.name.nullable.error.name,jiraacc.Component.name.nullable.error.java.lang.String,jiraacc.Component.name.nullable.error,component.name.nullable.error.jiraacc.Component.name,component.name.nullable.error.name,component.name.nullable.error.java.lang.String,component.name.nullable.error,jiraacc.Component.name.nullable.jiraacc.Component.name,jiraacc.Component.name.nullable.name,jiraacc.Component.name.nullable.java.lang.String,jiraacc.Component.name.nullable,component.name.nullable.jiraacc.Component.name,component.name.nullable.name,component.name.nullable.java.lang.String,component.name.nullable,nullable.jiraacc.Component.name,nullable.name,nullable.java.lang.String,nullable]; arguments [name,class jiraacc.Component]; default message [Property [{0}] of class [{1}] cannot be null]
+
+BadField:
+Field error in object 'jiraacc.Component' on field 'name': rejected value [null]; codes [jiraacc.Component.name.nullable.error.jiraacc.Component.name,jiraacc.Component.name.nullable.error.name,jiraacc.Component.name.nullable.error.java.lang.String,jiraacc.Component.name.nullable.error,component.name.nullable.error.jiraacc.Component.name,component.name.nullable.error.name,component.name.nullable.error.java.lang.String,component.name.nullable.error,jiraacc.Component.name.nullable.jiraacc.Component.name,jiraacc.Component.name.nullable.name,jiraacc.Component.name.nullable.java.lang.String,jiraacc.Component.name.nullable,component.name.nullable.jiraacc.Component.name,component.name.nullable.name,component.name.nullable.java.lang.String,component.name.nullable,nullable.jiraacc.Component.name,nullable.name,nullable.java.lang.String,nullable]; arguments [name,class jiraacc.Component]; default message [Property [{0}] of class [{1}] cannot be null]
+--Output from ComponentNameMustBeUnique--
+
+Errors:
+grails.validation.ValidationErrors: 1 errors
+Field error in object 'jiraacc.Component' on field 'name': rejected value [comp1]; codes [jiraacc.Component.name.unique.error.jiraacc.Component.name,jiraacc.Component.name.unique.error.name,jiraacc.Component.name.unique.error.java.lang.String,jiraacc.Component.name.unique.error,component.name.unique.error.jiraacc.Component.name,component.name.unique.error.name,component.name.unique.error.java.lang.String,component.name.unique.error,jiraacc.Component.name.unique.jiraacc.Component.name,jiraacc.Component.name.unique.name,jiraacc.Component.name.unique.java.lang.String,jiraacc.Component.name.unique,component.name.unique.jiraacc.Component.name,component.name.unique.name,component.name.unique.java.lang.String,component.name.unique,unique.jiraacc.Component.name,unique.name,unique.java.lang.String,unique]; arguments [name,class jiraacc.Component,comp1]; default message [Property [{0}] of class [{1}] with value [{2}] must be unique]
+
+BadField:
+Field error in object 'jiraacc.Component' on field 'name': rejected value [comp1]; codes [jiraacc.Component.name.unique.error.jiraacc.Component.name,jiraacc.Component.name.unique.error.name,jiraacc.Component.name.unique.error.java.lang.String,jiraacc.Component.name.unique.error,component.name.unique.error.jiraacc.Component.name,component.name.unique.error.name,component.name.unique.error.java.lang.String,component.name.unique.error,jiraacc.Component.name.unique.jiraacc.Component.name,jiraacc.Component.name.unique.name,jiraacc.Component.name.unique.java.lang.String,jiraacc.Component.name.unique,component.name.unique.jiraacc.Component.name,component.name.unique.name,component.name.unique.java.lang.String,component.name.unique,unique.jiraacc.Component.name,unique.name,unique.java.lang.String,unique]; arguments [name,class jiraacc.Component,comp1]; default message [Property [{0}] of class [{1}] with value [{2}] must be unique]
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from CanSaveAComponent--
+--Output from ComponentNameCanNotBeNull--
+--Output from ComponentNameMustBeUnique--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clear"></div>
+</div>
+<!--
+            Parses JUnit output and associates it with the corresponding test case
+        -->
+<script language="javascript">
+
+
+/**
+ * The JUnit report format is incredibly stuipd in the
+ * sense that it accumulates output from all test methods
+ * into a single xml node.
+ */
+(function() {
+
+    var outputElements = findOutputElements();
+    for (var i in outputElements) {
+        var outputElement = outputElements[i];
+        var textOutput = outputElement.element.firstChild.nodeValue;
+        var header = outputElement.getHeader();
+        appendTestMethodOutput(textOutput, header);
+    }
+
+    function findOutputElements() {
+        var outputElements = [];
+        var preElements = document.getElementsByTagName("pre");
+        for (var i in preElements) {
+            var preElement = preElements[i];
+            var className = preElement.className || "";
+            if (className.indexOf("stdout") >= 0) {
+                var outputElement = new OutputElement(preElement, "output");
+                outputElements.push(outputElement);
+            } else if (className.indexOf("syserr") >= 0) {
+                var outputElement = new OutputElement(preElement, "error");
+                outputElements.push(outputElement);
+            }
+        }
+
+        return outputElements;
+    }
+
+    function OutputElement(element, type) {
+        this.element = element;
+        this.type = type;
+
+        this.getHeader = function() {
+            if (type === "output") {
+                return "System output";
+            } else if ("error") {
+                return "System error";
+            }
+        }
+    }
+
+    function appendTestMethodOutput(text, header) {
+        var testOutput = new TestMethodOutput(header);
+
+        var lines = text.split(/\r\n|\r|\n/);
+        for (var i in lines) {
+            var line = lines[i];
+            var matches = line.match(/^--Output from (.*)--$/);
+            if (matches !== null && matches.length == 2) {
+                testOutput.flushToDom();
+                testOutput.testName = matches[1];
+            } else {
+                testOutput.addLine(line);
+            }
+        }
+
+        testOutput.flushToDom();
+    }
+
+    function TestMethodOutput(header) {
+        this.header = header;
+        this.testName = undefined;
+        this.buffer = "";
+
+        this.addLine = function(line) {
+            this.buffer += line + "\n";
+        }
+
+        this.flushToDom = function() {
+            if (this.testName !== undefined) {
+                var domNode = getTestcaseElementByName(this.testName);
+                if (domNode !== undefined && trimString(this.buffer).length > 0) {
+                    this.appendTo(domNode);
+                }
+
+                this.reset();
+            }
+        }
+
+        this.appendTo = function(domNode) {
+            var node = document.createElement("div");
+            node.innerHTML = '<p><b class="message">' + header + '</b></p>';
+
+            var preNode = document.createElement("pre");
+            preNode.appendChild(document.createTextNode(this.buffer));
+            node.appendChild(preNode);
+
+            var outputContainer = findElementByTagClassAndParent("div", "outputinfo", domNode);
+            outputContainer.appendChild(node);
+        }
+
+        this.reset = function() {
+            this.methodName = undefined;
+            this.buffer = "";
+        }
+    }
+
+    function getTestcaseElementByName(name) {
+        var divElements = document.getElementsByTagName("div");
+        var elementCount = divElements.length;
+        for (var i=0; i<elementCount; i++) {
+            var el = divElements[i];
+            if (el.getAttribute("data-name") === name) {
+                return el;
+            }
+        }
+    }
+
+    function findElementByTagClassAndParent(tagName, className, parentNode) {
+        var elements = parentNode.getElementsByTagName(tagName);
+        for (var i in elements) {
+            var element = elements[i];
+
+            // Not 100% correct, but good enough here
+            if (element.className !== undefined && element.className.indexOf(className) >= 0) {
+                return element;
+            }
+        }
+    }
+
+    function trimString(str) {
+        return str.replace(/^\s\s*/, '').replace(/\s\s*$/, '');
+    }
+
+})();
+
+        </script>
+</body>
+</html>

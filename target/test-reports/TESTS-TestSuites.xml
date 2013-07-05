@@ -1,34 +1,166 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
-  <testsuite errors="0" failures="0" hostname="Travis-McGaheys-MacBook-Pro.local" id="0" name="AttributeIntegrationTests" package="jiraacc" tests="2" time="0.244" timestamp="2013-06-22T02:03:06">
+  <testsuite errors="0" failures="0" hostname="Travis-McGaheys-MacBook-Pro.local" id="0" name="AttributeIntegrationTests" package="jiraacc" tests="3" time="0.342" timestamp="2013-07-03T03:15:39">
       <properties />
 
-      <testcase classname="jiraacc.AttributeIntegrationTests" name="CanSaveAnAttribute" time="0.22" />
+      <testcase classname="jiraacc.AttributeIntegrationTests" name="CanSaveAnAttribute" time="0.235" />
 
-      <testcase classname="jiraacc.AttributeIntegrationTests" name="AttributeNameCanNotBeNull" time="0.011" />
+      <testcase classname="jiraacc.AttributeIntegrationTests" name="AttributeNameCanNotBeNull" time="0.02" />
+
+      <testcase classname="jiraacc.AttributeIntegrationTests" name="AttributeNamesMustBeUnique" time="0.082" />
 
       <system-out><![CDATA[--Output from CanSaveAnAttribute--
 --Output from AttributeNameCanNotBeNull--
+
+Errors:
+grails.validation.ValidationErrors: 1 errors
+Field error in object 'jiraacc.Attribute' on field 'name': rejected value [null]; codes [jiraacc.Attribute.name.nullable.error.jiraacc.Attribute.name,jiraacc.Attribute.name.nullable.error.name,jiraacc.Attribute.name.nullable.error.java.lang.String,jiraacc.Attribute.name.nullable.error,attribute.name.nullable.error.jiraacc.Attribute.name,attribute.name.nullable.error.name,attribute.name.nullable.error.java.lang.String,attribute.name.nullable.error,jiraacc.Attribute.name.nullable.jiraacc.Attribute.name,jiraacc.Attribute.name.nullable.name,jiraacc.Attribute.name.nullable.java.lang.String,jiraacc.Attribute.name.nullable,attribute.name.nullable.jiraacc.Attribute.name,attribute.name.nullable.name,attribute.name.nullable.java.lang.String,attribute.name.nullable,nullable.jiraacc.Attribute.name,nullable.name,nullable.java.lang.String,nullable]; arguments [name,class jiraacc.Attribute]; default message [Property [{0}] of class [{1}] cannot be null]
+
+BadField:
+Field error in object 'jiraacc.Attribute' on field 'name': rejected value [null]; codes [jiraacc.Attribute.name.nullable.error.jiraacc.Attribute.name,jiraacc.Attribute.name.nullable.error.name,jiraacc.Attribute.name.nullable.error.java.lang.String,jiraacc.Attribute.name.nullable.error,attribute.name.nullable.error.jiraacc.Attribute.name,attribute.name.nullable.error.name,attribute.name.nullable.error.java.lang.String,attribute.name.nullable.error,jiraacc.Attribute.name.nullable.jiraacc.Attribute.name,jiraacc.Attribute.name.nullable.name,jiraacc.Attribute.name.nullable.java.lang.String,jiraacc.Attribute.name.nullable,attribute.name.nullable.jiraacc.Attribute.name,attribute.name.nullable.name,attribute.name.nullable.java.lang.String,attribute.name.nullable,nullable.jiraacc.Attribute.name,nullable.name,nullable.java.lang.String,nullable]; arguments [name,class jiraacc.Attribute]; default message [Property [{0}] of class [{1}] cannot be null]
+--Output from AttributeNamesMustBeUnique--
+
+Errors:
+grails.validation.ValidationErrors: 1 errors
+Field error in object 'jiraacc.Attribute' on field 'name': rejected value [attr1]; codes [jiraacc.Attribute.name.unique.error.jiraacc.Attribute.name,jiraacc.Attribute.name.unique.error.name,jiraacc.Attribute.name.unique.error.java.lang.String,jiraacc.Attribute.name.unique.error,attribute.name.unique.error.jiraacc.Attribute.name,attribute.name.unique.error.name,attribute.name.unique.error.java.lang.String,attribute.name.unique.error,jiraacc.Attribute.name.unique.jiraacc.Attribute.name,jiraacc.Attribute.name.unique.name,jiraacc.Attribute.name.unique.java.lang.String,jiraacc.Attribute.name.unique,attribute.name.unique.jiraacc.Attribute.name,attribute.name.unique.name,attribute.name.unique.java.lang.String,attribute.name.unique,unique.jiraacc.Attribute.name,unique.name,unique.java.lang.String,unique]; arguments [name,class jiraacc.Attribute,attr1]; default message [Property [{0}] of class [{1}] with value [{2}] must be unique]
+
+BadField:
+Field error in object 'jiraacc.Attribute' on field 'name': rejected value [attr1]; codes [jiraacc.Attribute.name.unique.error.jiraacc.Attribute.name,jiraacc.Attribute.name.unique.error.name,jiraacc.Attribute.name.unique.error.java.lang.String,jiraacc.Attribute.name.unique.error,attribute.name.unique.error.jiraacc.Attribute.name,attribute.name.unique.error.name,attribute.name.unique.error.java.lang.String,attribute.name.unique.error,jiraacc.Attribute.name.unique.jiraacc.Attribute.name,jiraacc.Attribute.name.unique.name,jiraacc.Attribute.name.unique.java.lang.String,jiraacc.Attribute.name.unique,attribute.name.unique.jiraacc.Attribute.name,attribute.name.unique.name,attribute.name.unique.java.lang.String,attribute.name.unique,unique.jiraacc.Attribute.name,unique.name,unique.java.lang.String,unique]; arguments [name,class jiraacc.Attribute,attr1]; default message [Property [{0}] of class [{1}] with value [{2}] must be unique]
 ]]></system-out>
 
       <system-err><![CDATA[--Output from CanSaveAnAttribute--
 --Output from AttributeNameCanNotBeNull--
+--Output from AttributeNamesMustBeUnique--
 ]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="Travis-McGaheys-MacBook-Pro.local" id="1" name="ComponentIntegrationTests" package="jiraacc" tests="2" time="0.026" timestamp="2013-06-22T02:03:06">
+  <testsuite errors="0" failures="0" hostname="Travis-McGaheys-MacBook-Pro.local" id="1" name="CapabilityIntegrationTests" package="jiraacc" tests="4" time="0.124" timestamp="2013-07-03T03:15:39">
       <properties />
 
-      <testcase classname="jiraacc.ComponentIntegrationTests" name="CanSaveAComponent" time="0.014" />
+      <testcase classname="jiraacc.CapabilityIntegrationTests" name="CanSaveCapability" time="0.025" />
 
-      <testcase classname="jiraacc.ComponentIntegrationTests" name="ComponentNameCanNotBeNull" time="0.0070" />
+      <testcase classname="jiraacc.CapabilityIntegrationTests" name="CapabilityDescriptionCanNotBeNull" time="0.067" />
+
+      <testcase classname="jiraacc.CapabilityIntegrationTests" name="CapabilityAttributeCanNotBeNull" time="0.014" />
+
+      <testcase classname="jiraacc.CapabilityIntegrationTests" name="CapabilityComponentCanNotBeNull" time="0.014" />
+
+      <system-out><![CDATA[--Output from CanSaveCapability--
+--Output from CapabilityDescriptionCanNotBeNull--
+
+Errors:
+grails.validation.ValidationErrors: 1 errors
+Field error in object 'jiraacc.Capability' on field 'description': rejected value [null]; codes [jiraacc.Capability.description.nullable.error.jiraacc.Capability.description,jiraacc.Capability.description.nullable.error.description,jiraacc.Capability.description.nullable.error.java.lang.String,jiraacc.Capability.description.nullable.error,capability.description.nullable.error.jiraacc.Capability.description,capability.description.nullable.error.description,capability.description.nullable.error.java.lang.String,capability.description.nullable.error,jiraacc.Capability.description.nullable.jiraacc.Capability.description,jiraacc.Capability.description.nullable.description,jiraacc.Capability.description.nullable.java.lang.String,jiraacc.Capability.description.nullable,capability.description.nullable.jiraacc.Capability.description,capability.description.nullable.description,capability.description.nullable.java.lang.String,capability.description.nullable,nullable.jiraacc.Capability.description,nullable.description,nullable.java.lang.String,nullable]; arguments [description,class jiraacc.Capability]; default message [Property [{0}] of class [{1}] cannot be null]
+
+BadField:
+Field error in object 'jiraacc.Capability' on field 'description': rejected value [null]; codes [jiraacc.Capability.description.nullable.error.jiraacc.Capability.description,jiraacc.Capability.description.nullable.error.description,jiraacc.Capability.description.nullable.error.java.lang.String,jiraacc.Capability.description.nullable.error,capability.description.nullable.error.jiraacc.Capability.description,capability.description.nullable.error.description,capability.description.nullable.error.java.lang.String,capability.description.nullable.error,jiraacc.Capability.description.nullable.jiraacc.Capability.description,jiraacc.Capability.description.nullable.description,jiraacc.Capability.description.nullable.java.lang.String,jiraacc.Capability.description.nullable,capability.description.nullable.jiraacc.Capability.description,capability.description.nullable.description,capability.description.nullable.java.lang.String,capability.description.nullable,nullable.jiraacc.Capability.description,nullable.description,nullable.java.lang.String,nullable]; arguments [description,class jiraacc.Capability]; default message [Property [{0}] of class [{1}] cannot be null]
+--Output from CapabilityAttributeCanNotBeNull--
+
+Errors:
+grails.validation.ValidationErrors: 1 errors
+Field error in object 'jiraacc.Capability' on field 'attribute': rejected value [null]; codes [jiraacc.Capability.attribute.nullable.error.jiraacc.Capability.attribute,jiraacc.Capability.attribute.nullable.error.attribute,jiraacc.Capability.attribute.nullable.error.jiraacc.Attribute,jiraacc.Capability.attribute.nullable.error,capability.attribute.nullable.error.jiraacc.Capability.attribute,capability.attribute.nullable.error.attribute,capability.attribute.nullable.error.jiraacc.Attribute,capability.attribute.nullable.error,jiraacc.Capability.attribute.nullable.jiraacc.Capability.attribute,jiraacc.Capability.attribute.nullable.attribute,jiraacc.Capability.attribute.nullable.jiraacc.Attribute,jiraacc.Capability.attribute.nullable,capability.attribute.nullable.jiraacc.Capability.attribute,capability.attribute.nullable.attribute,capability.attribute.nullable.jiraacc.Attribute,capability.attribute.nullable,nullable.jiraacc.Capability.attribute,nullable.attribute,nullable.jiraacc.Attribute,nullable]; arguments [attribute,class jiraacc.Capability]; default message [Property [{0}] of class [{1}] cannot be null]
+
+BadField:
+Field error in object 'jiraacc.Capability' on field 'attribute': rejected value [null]; codes [jiraacc.Capability.attribute.nullable.error.jiraacc.Capability.attribute,jiraacc.Capability.attribute.nullable.error.attribute,jiraacc.Capability.attribute.nullable.error.jiraacc.Attribute,jiraacc.Capability.attribute.nullable.error,capability.attribute.nullable.error.jiraacc.Capability.attribute,capability.attribute.nullable.error.attribute,capability.attribute.nullable.error.jiraacc.Attribute,capability.attribute.nullable.error,jiraacc.Capability.attribute.nullable.jiraacc.Capability.attribute,jiraacc.Capability.attribute.nullable.attribute,jiraacc.Capability.attribute.nullable.jiraacc.Attribute,jiraacc.Capability.attribute.nullable,capability.attribute.nullable.jiraacc.Capability.attribute,capability.attribute.nullable.attribute,capability.attribute.nullable.jiraacc.Attribute,capability.attribute.nullable,nullable.jiraacc.Capability.attribute,nullable.attribute,nullable.jiraacc.Attribute,nullable]; arguments [attribute,class jiraacc.Capability]; default message [Property [{0}] of class [{1}] cannot be null]
+--Output from CapabilityComponentCanNotBeNull--
+
+Errors:
+grails.validation.ValidationErrors: 1 errors
+Field error in object 'jiraacc.Capability' on field 'component': rejected value [null]; codes [jiraacc.Capability.component.nullable.error.jiraacc.Capability.component,jiraacc.Capability.component.nullable.error.component,jiraacc.Capability.component.nullable.error.jiraacc.Component,jiraacc.Capability.component.nullable.error,capability.component.nullable.error.jiraacc.Capability.component,capability.component.nullable.error.component,capability.component.nullable.error.jiraacc.Component,capability.component.nullable.error,jiraacc.Capability.component.nullable.jiraacc.Capability.component,jiraacc.Capability.component.nullable.component,jiraacc.Capability.component.nullable.jiraacc.Component,jiraacc.Capability.component.nullable,capability.component.nullable.jiraacc.Capability.component,capability.component.nullable.component,capability.component.nullable.jiraacc.Component,capability.component.nullable,nullable.jiraacc.Capability.component,nullable.component,nullable.jiraacc.Component,nullable]; arguments [component,class jiraacc.Capability]; default message [Property [{0}] of class [{1}] cannot be null]
+
+BadField:
+Field error in object 'jiraacc.Capability' on field 'component': rejected value [null]; codes [jiraacc.Capability.component.nullable.error.jiraacc.Capability.component,jiraacc.Capability.component.nullable.error.component,jiraacc.Capability.component.nullable.error.jiraacc.Component,jiraacc.Capability.component.nullable.error,capability.component.nullable.error.jiraacc.Capability.component,capability.component.nullable.error.component,capability.component.nullable.error.jiraacc.Component,capability.component.nullable.error,jiraacc.Capability.component.nullable.jiraacc.Capability.component,jiraacc.Capability.component.nullable.component,jiraacc.Capability.component.nullable.jiraacc.Component,jiraacc.Capability.component.nullable,capability.component.nullable.jiraacc.Capability.component,capability.component.nullable.component,capability.component.nullable.jiraacc.Component,capability.component.nullable,nullable.jiraacc.Capability.component,nullable.component,nullable.jiraacc.Component,nullable]; arguments [component,class jiraacc.Capability]; default message [Property [{0}] of class [{1}] cannot be null]
+]]></system-out>
+
+      <system-err><![CDATA[--Output from CanSaveCapability--
+--Output from CapabilityDescriptionCanNotBeNull--
+--Output from CapabilityAttributeCanNotBeNull--
+--Output from CapabilityComponentCanNotBeNull--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Travis-McGaheys-MacBook-Pro.local" id="2" name="ComponentIntegrationTests" package="jiraacc" tests="3" time="0.029" timestamp="2013-07-03T03:15:39">
+      <properties />
+
+      <testcase classname="jiraacc.ComponentIntegrationTests" name="CanSaveAComponent" time="0.013" />
+
+      <testcase classname="jiraacc.ComponentIntegrationTests" name="ComponentNameCanNotBeNull" time="0.0040" />
+
+      <testcase classname="jiraacc.ComponentIntegrationTests" name="ComponentNameMustBeUnique" time="0.01" />
 
       <system-out><![CDATA[--Output from CanSaveAComponent--
 --Output from ComponentNameCanNotBeNull--
+
+Errors:
+grails.validation.ValidationErrors: 1 errors
+Field error in object 'jiraacc.Component' on field 'name': rejected value [null]; codes [jiraacc.Component.name.nullable.error.jiraacc.Component.name,jiraacc.Component.name.nullable.error.name,jiraacc.Component.name.nullable.error.java.lang.String,jiraacc.Component.name.nullable.error,component.name.nullable.error.jiraacc.Component.name,component.name.nullable.error.name,component.name.nullable.error.java.lang.String,component.name.nullable.error,jiraacc.Component.name.nullable.jiraacc.Component.name,jiraacc.Component.name.nullable.name,jiraacc.Component.name.nullable.java.lang.String,jiraacc.Component.name.nullable,component.name.nullable.jiraacc.Component.name,component.name.nullable.name,component.name.nullable.java.lang.String,component.name.nullable,nullable.jiraacc.Component.name,nullable.name,nullable.java.lang.String,nullable]; arguments [name,class jiraacc.Component]; default message [Property [{0}] of class [{1}] cannot be null]
+
+BadField:
+Field error in object 'jiraacc.Component' on field 'name': rejected value [null]; codes [jiraacc.Component.name.nullable.error.jiraacc.Component.name,jiraacc.Component.name.nullable.error.name,jiraacc.Component.name.nullable.error.java.lang.String,jiraacc.Component.name.nullable.error,component.name.nullable.error.jiraacc.Component.name,component.name.nullable.error.name,component.name.nullable.error.java.lang.String,component.name.nullable.error,jiraacc.Component.name.nullable.jiraacc.Component.name,jiraacc.Component.name.nullable.name,jiraacc.Component.name.nullable.java.lang.String,jiraacc.Component.name.nullable,component.name.nullable.jiraacc.Component.name,component.name.nullable.name,component.name.nullable.java.lang.String,component.name.nullable,nullable.jiraacc.Component.name,nullable.name,nullable.java.lang.String,nullable]; arguments [name,class jiraacc.Component]; default message [Property [{0}] of class [{1}] cannot be null]
+--Output from ComponentNameMustBeUnique--
+
+Errors:
+grails.validation.ValidationErrors: 1 errors
+Field error in object 'jiraacc.Component' on field 'name': rejected value [comp1]; codes [jiraacc.Component.name.unique.error.jiraacc.Component.name,jiraacc.Component.name.unique.error.name,jiraacc.Component.name.unique.error.java.lang.String,jiraacc.Component.name.unique.error,component.name.unique.error.jiraacc.Component.name,component.name.unique.error.name,component.name.unique.error.java.lang.String,component.name.unique.error,jiraacc.Component.name.unique.jiraacc.Component.name,jiraacc.Component.name.unique.name,jiraacc.Component.name.unique.java.lang.String,jiraacc.Component.name.unique,component.name.unique.jiraacc.Component.name,component.name.unique.name,component.name.unique.java.lang.String,component.name.unique,unique.jiraacc.Component.name,unique.name,unique.java.lang.String,unique]; arguments [name,class jiraacc.Component,comp1]; default message [Property [{0}] of class [{1}] with value [{2}] must be unique]
+
+BadField:
+Field error in object 'jiraacc.Component' on field 'name': rejected value [comp1]; codes [jiraacc.Component.name.unique.error.jiraacc.Component.name,jiraacc.Component.name.unique.error.name,jiraacc.Component.name.unique.error.java.lang.String,jiraacc.Component.name.unique.error,component.name.unique.error.jiraacc.Component.name,component.name.unique.error.name,component.name.unique.error.java.lang.String,component.name.unique.error,jiraacc.Component.name.unique.jiraacc.Component.name,jiraacc.Component.name.unique.name,jiraacc.Component.name.unique.java.lang.String,jiraacc.Component.name.unique,component.name.unique.jiraacc.Component.name,component.name.unique.name,component.name.unique.java.lang.String,component.name.unique,unique.jiraacc.Component.name,unique.name,unique.java.lang.String,unique]; arguments [name,class jiraacc.Component,comp1]; default message [Property [{0}] of class [{1}] with value [{2}] must be unique]
 ]]></system-out>
 
       <system-err><![CDATA[--Output from CanSaveAComponent--
 --Output from ComponentNameCanNotBeNull--
+--Output from ComponentNameMustBeUnique--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="1" hostname="Travis-McGaheys-MacBook-Pro.local" id="3" name="AttributeTests" package="jiraacc" tests="1" time="0.933" timestamp="2013-07-03T03:15:28">
+      <properties />
+
+      <testcase classname="jiraacc.AttributeTests" name="testSomething" time="0.813">
+          <failure message="junit.framework.AssertionFailedError: Implement me" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: junit.framework.AssertionFailedError: Implement me
+	at jiraacc.AttributeTests.testSomething(AttributeTests.groovy:15)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="1" hostname="Travis-McGaheys-MacBook-Pro.local" id="4" name="CapabilityTests" package="jiraacc" tests="1" time="0.176" timestamp="2013-07-03T03:15:29">
+      <properties />
+
+      <testcase classname="jiraacc.CapabilityTests" name="testSomething" time="0.096">
+          <failure message="junit.framework.AssertionFailedError: Implement me" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: junit.framework.AssertionFailedError: Implement me
+	at jiraacc.CapabilityTests.testSomething(CapabilityTests.groovy:15)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="1" hostname="Travis-McGaheys-MacBook-Pro.local" id="5" name="ComponentTests" package="jiraacc" tests="1" time="0.082" timestamp="2013-07-03T03:15:29">
+      <properties />
+
+      <testcase classname="jiraacc.ComponentTests" name="testSomething" time="0.08">
+          <failure message="junit.framework.AssertionFailedError: Implement me" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: junit.framework.AssertionFailedError: Implement me
+	at jiraacc.ComponentTests.testSomething(ComponentTests.groovy:15)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
 ]]></system-err>
 
   </testsuite>

@@ -40,7 +40,7 @@
 <h2>AttributeIntegrationTests</h2>
 <h3>
                         Executed
-                        2
+                        3
                         tests
                     
                         without a single error or failure!
@@ -51,7 +51,7 @@
 <p>
 <span class="icon success"></span><b class="testname message success">CanSaveAnAttribute</b>
 </p>
-<p class="summary">Executed in 0.22 seconds.</p>
+<p class="summary">Executed in 0.235 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -61,7 +61,17 @@
 <p>
 <span class="icon success"></span><b class="testname message success">AttributeNameCanNotBeNull</b>
 </p>
-<p class="summary">Executed in 0.011 seconds.</p>
+<p class="summary">Executed in 0.02 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="AttributeNamesMustBeUnique">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">AttributeNamesMustBeUnique</b>
+</p>
+<p class="summary">Executed in 0.082 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -71,12 +81,28 @@
 <h2>Standard output</h2>
 <pre class="stdout">--Output from CanSaveAnAttribute--
 --Output from AttributeNameCanNotBeNull--
+
+Errors:
+grails.validation.ValidationErrors: 1 errors
+Field error in object 'jiraacc.Attribute' on field 'name': rejected value [null]; codes [jiraacc.Attribute.name.nullable.error.jiraacc.Attribute.name,jiraacc.Attribute.name.nullable.error.name,jiraacc.Attribute.name.nullable.error.java.lang.String,jiraacc.Attribute.name.nullable.error,attribute.name.nullable.error.jiraacc.Attribute.name,attribute.name.nullable.error.name,attribute.name.nullable.error.java.lang.String,attribute.name.nullable.error,jiraacc.Attribute.name.nullable.jiraacc.Attribute.name,jiraacc.Attribute.name.nullable.name,jiraacc.Attribute.name.nullable.java.lang.String,jiraacc.Attribute.name.nullable,attribute.name.nullable.jiraacc.Attribute.name,attribute.name.nullable.name,attribute.name.nullable.java.lang.String,attribute.name.nullable,nullable.jiraacc.Attribute.name,nullable.name,nullable.java.lang.String,nullable]; arguments [name,class jiraacc.Attribute]; default message [Property [{0}] of class [{1}] cannot be null]
+
+BadField:
+Field error in object 'jiraacc.Attribute' on field 'name': rejected value [null]; codes [jiraacc.Attribute.name.nullable.error.jiraacc.Attribute.name,jiraacc.Attribute.name.nullable.error.name,jiraacc.Attribute.name.nullable.error.java.lang.String,jiraacc.Attribute.name.nullable.error,attribute.name.nullable.error.jiraacc.Attribute.name,attribute.name.nullable.error.name,attribute.name.nullable.error.java.lang.String,attribute.name.nullable.error,jiraacc.Attribute.name.nullable.jiraacc.Attribute.name,jiraacc.Attribute.name.nullable.name,jiraacc.Attribute.name.nullable.java.lang.String,jiraacc.Attribute.name.nullable,attribute.name.nullable.jiraacc.Attribute.name,attribute.name.nullable.name,attribute.name.nullable.java.lang.String,attribute.name.nullable,nullable.jiraacc.Attribute.name,nullable.name,nullable.java.lang.String,nullable]; arguments [name,class jiraacc.Attribute]; default message [Property [{0}] of class [{1}] cannot be null]
+--Output from AttributeNamesMustBeUnique--
+
+Errors:
+grails.validation.ValidationErrors: 1 errors
+Field error in object 'jiraacc.Attribute' on field 'name': rejected value [attr1]; codes [jiraacc.Attribute.name.unique.error.jiraacc.Attribute.name,jiraacc.Attribute.name.unique.error.name,jiraacc.Attribute.name.unique.error.java.lang.String,jiraacc.Attribute.name.unique.error,attribute.name.unique.error.jiraacc.Attribute.name,attribute.name.unique.error.name,attribute.name.unique.error.java.lang.String,attribute.name.unique.error,jiraacc.Attribute.name.unique.jiraacc.Attribute.name,jiraacc.Attribute.name.unique.name,jiraacc.Attribute.name.unique.java.lang.String,jiraacc.Attribute.name.unique,attribute.name.unique.jiraacc.Attribute.name,attribute.name.unique.name,attribute.name.unique.java.lang.String,attribute.name.unique,unique.jiraacc.Attribute.name,unique.name,unique.java.lang.String,unique]; arguments [name,class jiraacc.Attribute,attr1]; default message [Property [{0}] of class [{1}] with value [{2}] must be unique]
+
+BadField:
+Field error in object 'jiraacc.Attribute' on field 'name': rejected value [attr1]; codes [jiraacc.Attribute.name.unique.error.jiraacc.Attribute.name,jiraacc.Attribute.name.unique.error.name,jiraacc.Attribute.name.unique.error.java.lang.String,jiraacc.Attribute.name.unique.error,attribute.name.unique.error.jiraacc.Attribute.name,attribute.name.unique.error.name,attribute.name.unique.error.java.lang.String,attribute.name.unique.error,jiraacc.Attribute.name.unique.jiraacc.Attribute.name,jiraacc.Attribute.name.unique.name,jiraacc.Attribute.name.unique.java.lang.String,jiraacc.Attribute.name.unique,attribute.name.unique.jiraacc.Attribute.name,attribute.name.unique.name,attribute.name.unique.java.lang.String,attribute.name.unique,unique.jiraacc.Attribute.name,unique.name,unique.java.lang.String,unique]; arguments [name,class jiraacc.Attribute,attr1]; default message [Property [{0}] of class [{1}] with value [{2}] must be unique]
 </pre>
 </div>
 <div class="syserr">
 <h2>System error</h2>
 <pre class="syserr">--Output from CanSaveAnAttribute--
 --Output from AttributeNameCanNotBeNull--
+--Output from AttributeNamesMustBeUnique--
 </pre>
 </div>
 </div>

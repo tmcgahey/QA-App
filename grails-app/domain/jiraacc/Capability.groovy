@@ -2,12 +2,17 @@ package jiraacc
 
 class Capability {
 
-	static belongsTo = [attibute:Attribute, component:Component]
+	static belongsTo = [attribute:Attribute, component:Component]
 	
 	String description
-	Date createdDate
+	Date dateCreated
+	Date lastUpdated
 	
     static constraints = {
 		description(blank:false, maxSize:1000)
     }
+	
+	String toString() {
+		return description
+	}
 }

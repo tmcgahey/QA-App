@@ -1,13 +1,30 @@
 Testsuite: jiraacc.AttributeIntegrationTests
-Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.244 sec
+Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.342 sec
 ------------- Standard Output ---------------
 --Output from CanSaveAnAttribute--
 --Output from AttributeNameCanNotBeNull--
+
+Errors:
+grails.validation.ValidationErrors: 1 errors
+Field error in object 'jiraacc.Attribute' on field 'name': rejected value [null]; codes [jiraacc.Attribute.name.nullable.error.jiraacc.Attribute.name,jiraacc.Attribute.name.nullable.error.name,jiraacc.Attribute.name.nullable.error.java.lang.String,jiraacc.Attribute.name.nullable.error,attribute.name.nullable.error.jiraacc.Attribute.name,attribute.name.nullable.error.name,attribute.name.nullable.error.java.lang.String,attribute.name.nullable.error,jiraacc.Attribute.name.nullable.jiraacc.Attribute.name,jiraacc.Attribute.name.nullable.name,jiraacc.Attribute.name.nullable.java.lang.String,jiraacc.Attribute.name.nullable,attribute.name.nullable.jiraacc.Attribute.name,attribute.name.nullable.name,attribute.name.nullable.java.lang.String,attribute.name.nullable,nullable.jiraacc.Attribute.name,nullable.name,nullable.java.lang.String,nullable]; arguments [name,class jiraacc.Attribute]; default message [Property [{0}] of class [{1}] cannot be null]
+
+BadField:
+Field error in object 'jiraacc.Attribute' on field 'name': rejected value [null]; codes [jiraacc.Attribute.name.nullable.error.jiraacc.Attribute.name,jiraacc.Attribute.name.nullable.error.name,jiraacc.Attribute.name.nullable.error.java.lang.String,jiraacc.Attribute.name.nullable.error,attribute.name.nullable.error.jiraacc.Attribute.name,attribute.name.nullable.error.name,attribute.name.nullable.error.java.lang.String,attribute.name.nullable.error,jiraacc.Attribute.name.nullable.jiraacc.Attribute.name,jiraacc.Attribute.name.nullable.name,jiraacc.Attribute.name.nullable.java.lang.String,jiraacc.Attribute.name.nullable,attribute.name.nullable.jiraacc.Attribute.name,attribute.name.nullable.name,attribute.name.nullable.java.lang.String,attribute.name.nullable,nullable.jiraacc.Attribute.name,nullable.name,nullable.java.lang.String,nullable]; arguments [name,class jiraacc.Attribute]; default message [Property [{0}] of class [{1}] cannot be null]
+--Output from AttributeNamesMustBeUnique--
+
+Errors:
+grails.validation.ValidationErrors: 1 errors
+Field error in object 'jiraacc.Attribute' on field 'name': rejected value [attr1]; codes [jiraacc.Attribute.name.unique.error.jiraacc.Attribute.name,jiraacc.Attribute.name.unique.error.name,jiraacc.Attribute.name.unique.error.java.lang.String,jiraacc.Attribute.name.unique.error,attribute.name.unique.error.jiraacc.Attribute.name,attribute.name.unique.error.name,attribute.name.unique.error.java.lang.String,attribute.name.unique.error,jiraacc.Attribute.name.unique.jiraacc.Attribute.name,jiraacc.Attribute.name.unique.name,jiraacc.Attribute.name.unique.java.lang.String,jiraacc.Attribute.name.unique,attribute.name.unique.jiraacc.Attribute.name,attribute.name.unique.name,attribute.name.unique.java.lang.String,attribute.name.unique,unique.jiraacc.Attribute.name,unique.name,unique.java.lang.String,unique]; arguments [name,class jiraacc.Attribute,attr1]; default message [Property [{0}] of class [{1}] with value [{2}] must be unique]
+
+BadField:
+Field error in object 'jiraacc.Attribute' on field 'name': rejected value [attr1]; codes [jiraacc.Attribute.name.unique.error.jiraacc.Attribute.name,jiraacc.Attribute.name.unique.error.name,jiraacc.Attribute.name.unique.error.java.lang.String,jiraacc.Attribute.name.unique.error,attribute.name.unique.error.jiraacc.Attribute.name,attribute.name.unique.error.name,attribute.name.unique.error.java.lang.String,attribute.name.unique.error,jiraacc.Attribute.name.unique.jiraacc.Attribute.name,jiraacc.Attribute.name.unique.name,jiraacc.Attribute.name.unique.java.lang.String,jiraacc.Attribute.name.unique,attribute.name.unique.jiraacc.Attribute.name,attribute.name.unique.name,attribute.name.unique.java.lang.String,attribute.name.unique,unique.jiraacc.Attribute.name,unique.name,unique.java.lang.String,unique]; arguments [name,class jiraacc.Attribute,attr1]; default message [Property [{0}] of class [{1}] with value [{2}] must be unique]
 ------------- ---------------- ---------------
 ------------- Standard Error -----------------
 --Output from CanSaveAnAttribute--
 --Output from AttributeNameCanNotBeNull--
+--Output from AttributeNamesMustBeUnique--
 ------------- ---------------- ---------------
 
-Testcase: CanSaveAnAttribute took 0.221 sec
-Testcase: AttributeNameCanNotBeNull took 0.011 sec
+Testcase: CanSaveAnAttribute took 0.235 sec
+Testcase: AttributeNameCanNotBeNull took 0.02 sec
+Testcase: AttributeNamesMustBeUnique took 0.082 sec

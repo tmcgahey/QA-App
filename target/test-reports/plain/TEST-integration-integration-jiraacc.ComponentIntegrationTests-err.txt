@@ -1,2 +1,3 @@
 --Output from CanSaveAComponent--
 --Output from ComponentNameCanNotBeNull--
+--Output from ComponentNameMustBeUnique--

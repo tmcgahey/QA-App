@@ -1,2 +1,3 @@
 --Output from CanSaveAnAttribute--
 --Output from AttributeNameCanNotBeNull--
+--Output from AttributeNamesMustBeUnique--

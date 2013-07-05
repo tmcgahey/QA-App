@@ -1,0 +1,4 @@
+--Output from CanSaveCapability--
+--Output from CapabilityDescriptionCanNotBeNull--
+--Output from CapabilityAttributeCanNotBeNull--
+--Output from CapabilityComponentCanNotBeNull--
